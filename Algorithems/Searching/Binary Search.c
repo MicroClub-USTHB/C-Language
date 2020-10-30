@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-// by debbah Mehdi Sofaine (MehdiSilk)
+// by debbah Mehdi Sofaine (MehdiSlik)
 
 // note : in binarys search the vector must be sorted 
 
@@ -15,24 +15,24 @@ int binary_search(int* vect ,int N,int x)
  
  while( fin>=debut) {
  	
- 	    mil=(int)((debut+fin)/2);
+ 	mil=(int)((debut+fin)/2);
         if (x==vect[mil]){
-			printf(" the element exist his index is :%d ",mil);
-			return mil;}
+	    printf(" the element exist his index is :%d ",mil);
+	    return mil;}
         else if (x>vect[mil])debut=mil+1;
         else fin=mil-1; 
         
 		}
 		
-		// if fin< debut
+	    // if fin< debut
 	    printf("the element doesnt exist ");
-		return -1 ;
+	    return -1 ;
 }
 	
 	
 int main(){
 	
-	int n,i ;int * t,x;
+    int n,i ;int * t,x;
 	
     printf("entre the size of the array :\n");
     scanf("%d",&n); 
@@ -40,15 +40,15 @@ int main(){
 	//array allocation		 	
  	t= (int*)(malloc(n* sizeof(int))) ;
  	
-    // array initialization
+      //array initialization
   	for( i=0;i<n;i++){
 		 *(t+i)=i+5;
 		 fflush(stdin);
 		 }
 		 
-	printf("\n show array: \n");
+    printf("\n show array: \n");
     // array show
-	 for( i=0;i<n;i++)	{
+      for( i=0;i<n;i++)	{
 	 	printf("%d \t",t[i]);
 	 }
 	  		 
