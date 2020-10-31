@@ -4,7 +4,7 @@
 #include <time.h>
 // by debbah Mehdi Sofaine (mehdi slik)
 //this file  containt the implemantation of  insertion sort in C 
-
+// link :https://en.wikipedia.org/wiki/Insertion_sort
 int main()
 {
   int i,j,n;
